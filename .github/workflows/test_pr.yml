@@ -15,4 +15,4 @@ jobs:
         run: | 
           echo "HEAD ${{ github.head_ref }}"
           echo "TARGET ${{ github.base_ref }}"
-          echo "EVENT ${{ github.event }}"
+          echo "EVENT ${{ github.event.pull_request.head.repo.git_url }}"
