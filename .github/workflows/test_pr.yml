@@ -17,3 +17,4 @@ jobs:
           echo "TARGET ${{ github.base_ref }}"
           echo "EVENT ${{ github.event.pull_request.head.repo.git_url }}"
           echo "SHA ${{ github.event.pull_request.head.sha }}"
+          echo "SECRET VALUE ${{ secrets.TEST_VALUE }}"
