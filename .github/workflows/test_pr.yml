@@ -13,5 +13,5 @@ jobs:
 
       - name: Echo data
         run: 
-          res=$(sshpass -p '${{ secrets.FUNNEL_PASS }}' ssh -o StrictHostKeyChecking=no ${{ secrets.FUNNEL_USER }}@${{ secrets.FUNNEL_PORT}} ls)
+          res=$(sshpass -p '${{ secrets.FUNNEL_PASS }}' ssh -o StrictHostKeyChecking=no ${{ secrets.FUNNEL_USER }}@${{ secrets.FUNNEL_HOST }} ls)
           echo $res
