@@ -12,6 +12,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Echo data
-        run: |
-          cd /github/workspace
-          ls
+        run: 
+          res=$(sshpass -p '${{ secrets.FUNNEL_PASS }}' ssh -o StrictHostKeyChecking=no ${{ secrets.FUNNEL_USER }}@${{ secrets.FUNNEL_PORT}} ls)
+          echo $res
