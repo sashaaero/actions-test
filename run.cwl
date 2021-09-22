@@ -1,6 +1,6 @@
 #!/usr/bin/env cwl-runner
 
-class: CommandLineTool
+class: Workflow
 id: "TEST"
 label: "Also TEST"
 cwlVersion: v1.1
