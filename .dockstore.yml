@@ -1,0 +1,8 @@
+version: 1.2
+workflows:
+  - name: TEST
+    subclass: CWL
+    publish: true
+    primaryDescriptorPath: run.cwl
+    testParameterFiles:
+      - config.json
