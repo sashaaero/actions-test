@@ -3,6 +3,6 @@ workflows:
   - name: TEST
     subclass: CWL
     publish: true
-    primaryDescriptorPath: run.cwl
+    primaryDescriptorPath: /run.cwl
     testParameterFiles:
-      - config.json
+      - /config.json
